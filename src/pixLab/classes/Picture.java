@@ -122,6 +122,7 @@ public class Picture extends SimplePicture
   /** Mirror just part of a picture of a temple */
   public void mirrorTemple()
   {
+	///Picture temple = new Picture("koala.jpg");
     int mirrorPoint = 276;
     Pixel leftPixel = null;
     Pixel rightPixel = null;
