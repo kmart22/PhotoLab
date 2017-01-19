@@ -170,7 +170,7 @@ public class Picture extends SimplePicture
   
   	public void mirrorDiagonalBottomRightToTopLeft()
   	{
-  		Pixel topleft = null;
+  		Pixel topLeft = null;
   		Pixel bottomRight = null;
   		
   		Pixel[][] pictureMatrix = this.getPixels2D();
