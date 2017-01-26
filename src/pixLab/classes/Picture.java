@@ -303,6 +303,50 @@ public class Picture extends SimplePicture
     }
   }
   
+  public void edgeDetection2(int edgeDist)
+  {
+	  Pixel leftPixel = null;
+	  Pixel rightPixel = null;
+	  Pixel topPixel = null;
+	  Pixel botPixel = null;
+	  
+  }
+  
+  public void mirrorArms()
+  {
+	  
+  }
+  
+  public void mirrorGull ()
+  {
+	  
+  }
+  
+  public void copy()
+  {
+	  
+  }
+  
+  public void myMethod()
+  {
+	  
+  }
+  
+  public void fullRandom()
+  {
+	  Pixel [][] currentPicture = this.getPixels2D();
+	  for (Pixel [] row : currentPicture)
+	  {
+		  for (Pixel currentPixel : row)
+		  {
+			  int red = (int) (Math.random() * 256);
+			  int green = (int) (Math.random() * 256);
+			  int blue = (int) (Math.random() * 256);
+			  
+			  currentPixel.setColor(new Color (red, green, blue));
+		  }
+	  }
+  }
   
   /* Main method for testing - each class in Java can have a main 
    * method 
