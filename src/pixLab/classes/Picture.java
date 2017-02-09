@@ -99,6 +99,19 @@ public class Picture extends SimplePicture
     }
   }
   
+  public void zeroGreen()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setGreen(0);
+      }
+    }
+  }
+  
+  
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
     * from left to right */
@@ -167,7 +180,23 @@ public class Picture extends SimplePicture
   			}
   		}
   	}
-  
+  	
+//  	public void addMessage(String message, int xPos, int yPos)
+//  	 {
+//  	   // get a graphics context to use to draw on the buffered image
+//  	   Graphics2D graphics2d = bufferedImage.createGraphics();
+//  	   
+//  	   // set the color to white
+//  	   graphics2d.setPaint(Color.white);
+//  	   
+//  	   // set the font to Helvetica bold style and size 16
+//  	   graphics2d.setFont(new Font("Helvetica",Font.BOLD,16));
+//  	   
+//  	   // draw the message
+//  	   graphics2d.drawString(message,xPos,yPos);
+//  	   
+//  	 }
+//  
   	public void mirrorDiagonalBottomRightToTopLeft()
   	{
   		Pixel topLeft = null;

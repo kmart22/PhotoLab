@@ -96,6 +96,17 @@ public class PictureTester
 	  
   }
   
+  public static void testValentinesMeme()
+  {
+	  Picture valentines = new Picture("valentinesMeme.jpg");
+	  valentines.zeroBlue();
+	  valentines.zeroGreen();
+	  valentines.drawString("this candy....", 70, 15);
+	  valentines.drawString("it's decent", 70, 130);
+	  valentines.explore();
+	  valentines.write("exportedValentinesMeme.jpg");
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -103,6 +114,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+	  testValentinesMeme();
     //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
