@@ -93,7 +93,12 @@ public class PictureTester
   
   public static void testMyMethod()
   {
-	  
+	  Picture myImage = new Picture("robot.jpg");
+	  myImage.zeroBlue();
+	  myImage.zeroGreen();
+	  myImage.mirrorVerticalRightToLeft();
+	  myImage.explore();
+	  myImage.write("exportedValentinesMeme.jpg");
   }
   
   public static void testValentinesMeme()
@@ -106,6 +111,8 @@ public class PictureTester
 	  valentines.explore();
 	  valentines.write("exportedValentinesMeme.jpg");
   }
+  
+
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -139,5 +146,6 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+	  testMyMethod();
   }
 }

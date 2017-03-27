@@ -409,6 +409,16 @@ public class Picture extends SimplePicture
 		this.mirrorVertical();
 		this.write("collage.jpg");
   }
+ 
+  public void glitchArt(Picture pic)
+	{
+		pic.randomPixel();
+		pic.negate();
+		pic.funky();
+		pic.mirrorHorizontalBottomToTop();
+		
+	}
+
   
   public void fullRandom()
   {
