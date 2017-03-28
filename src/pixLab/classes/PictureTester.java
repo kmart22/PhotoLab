@@ -112,7 +112,15 @@ public class PictureTester
 	  valentines.write("exportedValentinesMeme.jpg");
   }
   
-
+public static void testSteganography()
+{
+	Picture source = new Picture("base image.png");
+	Picture hidden = new Picture("hidden.png");
+	source.encode(hidden);
+	source.explore();
+	hidden.explore();
+	source.decode();
+}
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -146,6 +154,7 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-	  testMyMethod();
+	  //testMyMethod();
+	  testSteganography();
   }
 }
